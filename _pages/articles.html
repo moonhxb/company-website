@@ -1,0 +1,32 @@
+---
+layout: default
+title: 已发表
+permalink: /articles/
+---
+
+<div class="page-header">
+  <h1 class="page-title">已发表</h1>
+  <p class="page-desc">所有平台已发布的文章，持续更新中。</p>
+</div>
+
+<div class="topics-grid" style="margin-bottom: 2.5rem;">
+  <a href="/topics/etf" class="topic-card"><div class="topic-name">ETF投资</div><div class="topic-count">按主题查看</div></a>
+  <a href="/topics/tcm" class="topic-card"><div class="topic-name">中医健康</div><div class="topic-count">按主题查看</div></a>
+  <a href="/topics/ai" class="topic-card"><div class="topic-name">AI创作</div><div class="topic-count">按主题查看</div></a>
+</div>
+
+<div class="articles-list">
+  {% for post in site.posts %}
+  <article class="article-card">
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <div class="article-meta">
+      {{ post.date | date: "%Y-%m-%d" }}
+      {% if post.topic %} · {{ post.topic }}{% endif %}
+      {% if post.platforms %} · {{ post.platforms | join: ", " }}{% endif %}
+    </div>
+    <p class="article-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+  </article>
+  {% else %}
+  <p class="text-light" style="padding: 2rem 0; text-align:center">暂无已发表文章，持续创作中。</p>
+  {% endfor %}
+</div>

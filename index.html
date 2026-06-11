@@ -1,0 +1,58 @@
+---
+layout: default
+title: 主页
+permalink: /
+---
+
+<section class="hero">
+  <div class="container" style="text-align:center">
+    <h1 class="hero-title">用AI放大<br>一个人的声音</h1>
+    <p class="hero-subtitle">聚焦ETF投资 · 中医健康 · 内容创作</p>
+    <a href="/about" class="hero-tagline">了解我们</a>
+  </div>
+</section>
+
+<section style="padding: 3rem 0">
+  <div class="container">
+
+## 最新主题
+
+<div class="topics-grid">
+  <a href="/topics/etf" class="topic-card">
+    <div class="topic-name">ETF投资</div>
+    <div class="topic-count">深度分析 · 每周更新</div>
+  </a>
+  <a href="/topics/tcm" class="topic-card">
+    <div class="topic-name">中医健康</div>
+    <div class="topic-count">传统智慧 · 现代应用</div>
+  </a>
+  <a href="/topics/ai" class="topic-card">
+    <div class="topic-name">AI创作</div>
+    <div class="topic-count">效率工具 · 创作方法</div>
+  </a>
+</div>
+
+## 最近发表
+
+<ul style="list-style:none; margin-top:2rem; display:flex; flex-direction:column; gap:1rem;">
+  {% for post in site.posts limit:3 %}
+  <li>
+    <article class="article-card">
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <div class="article-meta">{{ post.date | date: "%Y-%m-%d" }} · {{ post.topic | default: "综合" }}</div>
+      <p class="article-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+    </article>
+  </li>
+  {% else %}
+  <li>
+    <p class="text-light" style="padding: 2rem 0; text-align:center">暂无已发表文章，持续创作中。</p>
+  </li>
+  {% endfor %}
+</ul>
+
+<p style="margin-top:2rem; text-align:center">
+  <a href="/articles">查看全部文章 →</a>
+</p>
+
+  </div>
+</section>

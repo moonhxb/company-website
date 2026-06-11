@@ -1,0 +1,24 @@
+---
+layout: default
+title: 中医健康
+permalink: /topics/tcm/
+---
+
+<div class="page-header">
+  <h1 class="page-title">中医健康</h1>
+  <p class="page-desc">传统医学智慧 · 现代生活方式应用</p>
+</div>
+
+<div class="articles-list">
+  {% for post in site.posts %}
+    {% if post.topic == "中医健康" %}
+    <article class="article-card">
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <div class="article-meta">{{ post.date | date: "%Y-%m-%d" }}{% if post.platforms %} · {{ post.platforms | join: ", " }}{% endif %}</div>
+      <p class="article-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+    </article>
+    {% endif %}
+  {% else %}
+  <p class="text-light">暂无中医相关文章。</p>
+  {% endfor %}
+</div>

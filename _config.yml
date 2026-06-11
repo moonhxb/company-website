@@ -1,0 +1,36 @@
+title: 自媒体一人公司
+description: 用AI放大一个人的声音
+author: 一人公司
+url: ""
+
+# GitHub Pages
+repository: lnxbh/company-website
+
+# Build
+markdown: kramdown
+highlighter: rouge
+
+# Defaults
+collections:
+  posts:
+    output: true
+    permalink: /articles/:year/:month/:day/:title/
+  pages:
+    output: true
+
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+  - scope:
+      path: "_pages"
+    values:
+      layout: default
+
+# Exclude
+exclude:
+  - README.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
