@@ -35,11 +35,9 @@ img{max-width:100%;display:block}
 .page-header{margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
 .page-title{font-family:var(--serif);font-size:2rem;font-weight:700;color:var(--text);margin-bottom:.5rem}
 .page-desc{color:var(--text-light);font-size:.95rem}
-.topics-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.8rem;margin-top:1.5rem}
-.topic-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.2rem 1rem;text-align:center;transition:all .2s;display:block}
-.topic-card:hover{border-color:var(--accent);box-shadow:0 3px 12px rgba(179,92,42,.1);text-decoration:none}
-.topic-dim{font-size:.65rem;font-weight:700;color:var(--accent);margin-bottom:.25rem;display:block}
-.topic-name{font-weight:700;font-size:.9rem;color:var(--text);display:block}
+.topics-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.8rem;margin-top:1.5rem}
+.topic-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.2rem 1rem;text-align:center;transition:all .2s;display:block;font-weight:700;font-size:.9rem;color:var(--text)}
+.topic-card:hover{border-color:var(--accent);box-shadow:0 3px 12px rgba(179,92,42,.1);text-decoration:none;color:var(--accent)}
 .articles-list{display:flex;flex-direction:column;gap:1.2rem}
 .article-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.2rem 1.5rem;transition:box-shadow .2s}
 .article-card:hover{box-shadow:0 3px 12px rgba(0,0,0,.06);border-color:#d4b896}
@@ -63,7 +61,6 @@ img{max-width:100%;display:block}
 .series-list{display:flex;flex-direction:column;gap:.5rem;margin-top:1.2rem}
 .series-item{display:flex;align-items:baseline;gap:.8rem;padding:.5rem 0;border-bottom:1px solid var(--border)}
 .series-item:last-child{border-bottom:none}
-.series-dim{font-size:.7rem;font-weight:700;color:var(--accent);min-width:2.5rem}
 .series-name{font-weight:600;color:var(--text);font-size:.9rem}
 @media(max-width:600px){.hero-title{font-size:2rem}.site-nav{gap:1.2rem}.topics-grid{grid-template-columns:repeat(2,1fr)}}
 </style>
@@ -82,74 +79,35 @@ img{max-width:100%;display:block}
 <p class="page-desc">所有平台已发布的文章，持续更新中。</p>
 </div>
 <div style="margin-bottom:1rem;padding:.8rem 0;border-bottom:1px solid var(--border)">
-<div style="display:flex;align-items:baseline;gap:.5rem;margin-bottom:.3rem">
-<span style="font-size:.7rem;font-weight:700;color:var(--accent)">A01</span>
 <a href="/topics/digestion.html" style="font-weight:700;color:var(--text)">脾胃与运化</a>
-</div>
-<div style="font-size:.8rem;color:var(--text-light)">暂无已发表文章</div>
-</div>
-<div style="margin-bottom:1rem;padding:.8rem 0;border-bottom:1px solid var(--border)">
-<div style="display:flex;align-items:baseline;gap:.5rem;margin-bottom:.3rem">
-<span style="font-size:.7rem;font-weight:700;color:var(--accent)">A02</span>
+<div style="font-size:.8rem;color:var(--text-light);margin-top:.2rem">暂无已发表文章</div>
+</div><div style="margin-bottom:1rem;padding:.8rem 0;border-bottom:1px solid var(--border)">
 <a href="/topics/qiblood.html" style="font-weight:700;color:var(--text)">气血与荣养</a>
-</div>
-<div style="font-size:.8rem;color:var(--text-light)">暂无已发表文章</div>
-</div>
-<div style="margin-bottom:1rem;padding:.8rem 0;border-bottom:1px solid var(--border)">
-<div style="display:flex;align-items:baseline;gap:.5rem;margin-bottom:.3rem">
-<span style="font-size:.7rem;font-weight:700;color:var(--accent)">A03</span>
+<div style="font-size:.8rem;color:var(--text-light);margin-top:.2rem">暂无已发表文章</div>
+</div><div style="margin-bottom:1rem;padding:.8rem 0;border-bottom:1px solid var(--border)">
 <a href="/topics/sleep.html" style="font-weight:700;color:var(--text)">睡眠与修复</a>
-</div>
-<div style="font-size:.8rem;color:var(--text-light)">暂无已发表文章</div>
-</div>
-<div style="margin-bottom:1rem;padding:.8rem 0;border-bottom:1px solid var(--border)">
-<div style="display:flex;align-items:baseline;gap:.5rem;margin-bottom:.3rem">
-<span style="font-size:.7rem;font-weight:700;color:var(--accent)">A04</span>
+<div style="font-size:.8rem;color:var(--text-light);margin-top:.2rem">暂无已发表文章</div>
+</div><div style="margin-bottom:1rem;padding:.8rem 0;border-bottom:1px solid var(--border)">
 <a href="/topics/emotions.html" style="font-weight:700;color:var(--text)">情志与脏腑</a>
-</div>
-<div style="font-size:.8rem;color:var(--text-light)">暂无已发表文章</div>
-</div>
-<div style="margin-bottom:1rem;padding:.8rem 0;border-bottom:1px solid var(--border)">
-<div style="display:flex;align-items:baseline;gap:.5rem;margin-bottom:.3rem">
-<span style="font-size:.7rem;font-weight:700;color:var(--accent)">A05</span>
+<div style="font-size:.8rem;color:var(--text-light);margin-top:.2rem">暂无已发表文章</div>
+</div><div style="margin-bottom:1rem;padding:.8rem 0;border-bottom:1px solid var(--border)">
 <a href="/topics/dampness.html" style="font-weight:700;color:var(--text)">湿浊与代谢</a>
-</div>
-<div style="font-size:.8rem;color:var(--text-light)">暂无已发表文章</div>
-</div>
-<div style="margin-bottom:1rem;padding:.8rem 0;border-bottom:1px solid var(--border)">
-<div style="display:flex;align-items:baseline;gap:.5rem;margin-bottom:.3rem">
-<span style="font-size:.7rem;font-weight:700;color:var(--accent)">A06</span>
+<div style="font-size:.8rem;color:var(--text-light);margin-top:.2rem">暂无已发表文章</div>
+</div><div style="margin-bottom:1rem;padding:.8rem 0;border-bottom:1px solid var(--border)">
 <a href="/topics/heating.html" style="font-weight:700;color:var(--text)">寒热与体质</a>
-</div>
-<div style="font-size:.8rem;color:var(--text-light)">暂无已发表文章</div>
-</div>
-<div style="margin-bottom:1rem;padding:.8rem 0;border-bottom:1px solid var(--border)">
-<div style="display:flex;align-items:baseline;gap:.5rem;margin-bottom:.3rem">
-<span style="font-size:.7rem;font-weight:700;color:var(--accent)">A07</span>
+<div style="font-size:.8rem;color:var(--text-light);margin-top:.2rem">暂无已发表文章</div>
+</div><div style="margin-bottom:1rem;padding:.8rem 0;border-bottom:1px solid var(--border)">
 <a href="/topics/pain.html" style="font-weight:700;color:var(--text)">疼痛与信号</a>
-</div>
-<div style="font-size:.8rem;color:var(--text-light)">暂无已发表文章</div>
-</div>
-<div style="margin-bottom:1rem;padding:.8rem 0;border-bottom:1px solid var(--border)">
-<div style="display:flex;align-items:baseline;gap:.5rem;margin-bottom:.3rem">
-<span style="font-size:.7rem;font-weight:700;color:var(--accent)">A08</span>
+<div style="font-size:.8rem;color:var(--text-light);margin-top:.2rem">暂无已发表文章</div>
+</div><div style="margin-bottom:1rem;padding:.8rem 0;border-bottom:1px solid var(--border)">
 <a href="/topics/appearance.html" style="font-weight:700;color:var(--text)">面色与外观</a>
-</div>
-<div style="font-size:.8rem;color:var(--text-light)">暂无已发表文章</div>
-</div>
-<div style="margin-bottom:1rem;padding:.8rem 0;border-bottom:1px solid var(--border)">
-<div style="display:flex;align-items:baseline;gap:.5rem;margin-bottom:.3rem">
-<span style="font-size:.7rem;font-weight:700;color:var(--accent)">A09</span>
+<div style="font-size:.8rem;color:var(--text-light);margin-top:.2rem">暂无已发表文章</div>
+</div><div style="margin-bottom:1rem;padding:.8rem 0;border-bottom:1px solid var(--border)">
 <a href="/topics/fluids.html" style="font-weight:700;color:var(--text)">津液与补水</a>
-</div>
-<div style="font-size:.8rem;color:var(--text-light)">暂无已发表文章</div>
-</div>
-<div style="margin-bottom:1rem;padding:.8rem 0;border-bottom:1px solid var(--border)">
-<div style="display:flex;align-items:baseline;gap:.5rem;margin-bottom:.3rem">
-<span style="font-size:.7rem;font-weight:700;color:var(--accent)">A10</span>
+<div style="font-size:.8rem;color:var(--text-light);margin-top:.2rem">暂无已发表文章</div>
+</div><div style="margin-bottom:1rem;padding:.8rem 0;border-bottom:1px solid var(--border)">
 <a href="/topics/seasonal.html" style="font-weight:700;color:var(--text)">四时与节律</a>
-</div>
-<div style="font-size:.8rem;color:var(--text-light)">暂无已发表文章</div>
+<div style="font-size:.8rem;color:var(--text-light);margin-top:.2rem">暂无已发表文章</div>
 </div>
 <div class="disclaimer">
         <strong>免责声明：</strong>本网站所有内容仅供健康知识参考，不构成任何医疗建议、诊断或治疗。<br>

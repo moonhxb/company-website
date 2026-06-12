@@ -35,11 +35,9 @@ img{max-width:100%;display:block}
 .page-header{margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
 .page-title{font-family:var(--serif);font-size:2rem;font-weight:700;color:var(--text);margin-bottom:.5rem}
 .page-desc{color:var(--text-light);font-size:.95rem}
-.topics-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.8rem;margin-top:1.5rem}
-.topic-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.2rem 1rem;text-align:center;transition:all .2s;display:block}
-.topic-card:hover{border-color:var(--accent);box-shadow:0 3px 12px rgba(179,92,42,.1);text-decoration:none}
-.topic-dim{font-size:.65rem;font-weight:700;color:var(--accent);margin-bottom:.25rem;display:block}
-.topic-name{font-weight:700;font-size:.9rem;color:var(--text);display:block}
+.topics-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.8rem;margin-top:1.5rem}
+.topic-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.2rem 1rem;text-align:center;transition:all .2s;display:block;font-weight:700;font-size:.9rem;color:var(--text)}
+.topic-card:hover{border-color:var(--accent);box-shadow:0 3px 12px rgba(179,92,42,.1);text-decoration:none;color:var(--accent)}
 .articles-list{display:flex;flex-direction:column;gap:1.2rem}
 .article-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.2rem 1.5rem;transition:box-shadow .2s}
 .article-card:hover{box-shadow:0 3px 12px rgba(0,0,0,.06);border-color:#d4b896}
@@ -63,7 +61,6 @@ img{max-width:100%;display:block}
 .series-list{display:flex;flex-direction:column;gap:.5rem;margin-top:1.2rem}
 .series-item{display:flex;align-items:baseline;gap:.8rem;padding:.5rem 0;border-bottom:1px solid var(--border)}
 .series-item:last-child{border-bottom:none}
-.series-dim{font-size:.7rem;font-weight:700;color:var(--accent);min-width:2.5rem}
 .series-name{font-weight:600;color:var(--text);font-size:.9rem}
 @media(max-width:600px){.hero-title{font-size:2rem}.site-nav{gap:1.2rem}.topics-grid{grid-template-columns:repeat(2,1fr)}}
 </style>
@@ -78,10 +75,7 @@ img{max-width:100%;display:block}
 </header>
 <main class="site-main"><div class="container">
 <div class="page-header">
-<div style="display:flex;align-items:baseline;gap:.8rem">
-<span style="font-size:.75rem;font-weight:700;color:var(--accent)">A02</span>
-<h1 class="page-title" style="margin-bottom:0">气血与荣养</h1>
-</div>
+<h1 class="page-title">气血与荣养</h1>
 </div>
 <div class="articles-list">
 <div class="empty-state">暂无已发表文章，持续创作中。</div>
