@@ -43,11 +43,10 @@ img{max-width:100%;display:block}
 .article-card h2 a:hover{color:var(--accent);text-decoration:none}
 .article-meta{font-size:.8rem;color:var(--text-light);margin-bottom:.8rem}
 .article-excerpt{font-size:.92rem;color:var(--text-light);line-height:1.7}
-.topics-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem;margin-top:2rem}
-.topic-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.2rem;text-align:center;transition:all .2s;display:block}
-.topic-card:hover{border-color:var(--accent);box-shadow:0 3px 12px rgba(179,92,42,.1);text-decoration:none}
-.topic-name{font-weight:600;font-size:.95rem;color:var(--text);margin-bottom:.3rem;display:block}
-.topic-count{font-size:.75rem;color:var(--text-light);display:block}
+.topic-card-full{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.5rem 2rem;text-align:center;transition:all .2s;display:block;max-width:400px;margin:2rem auto 0}
+.topic-card-full:hover{border-color:var(--accent);box-shadow:0 3px 12px rgba(179,92,42,.1);text-decoration:none}
+.topic-name{font-weight:600;font-size:1rem;color:var(--text);margin-bottom:.3rem;display:block}
+.topic-count{font-size:.8rem;color:var(--text-light);display:block}
 .about-section{margin-bottom:2.2rem}
 .about-section h2{font-family:var(--serif);font-size:1.25rem;font-weight:700;margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:2px solid var(--accent);display:inline-block;color:var(--text)}
 .about-section p{color:var(--text-light);line-height:1.9}
@@ -57,7 +56,7 @@ img{max-width:100%;display:block}
 .contact-label{font-weight:600;color:var(--text);min-width:3rem}
 .contact-value{color:var(--accent)}
 .section-divider{border:none;border-top:1px solid var(--border);margin:2.5rem 0}
-@media(max-width:600px){.hero-title{font-size:2rem}.site-nav{gap:1.2rem}.topics-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.hero-title{font-size:2rem}.site-nav{gap:1.2rem}}
 </style>
 </head>
 <body>
@@ -83,7 +82,6 @@ img{max-width:100%;display:block}
 <ul>
 <li><strong>中医养生内容</strong> — 深挖中医经典理论与现代生活场景的结合，内容涵盖食疗、艾灸、刮痧、情志调养等实用养生方法</li>
 <li><strong>健康生活方式</strong> — 分享作息、饮食、情志管理等与健康相关的实践心得</li>
-<li><strong>AI创作方法</strong> — 探索AI辅助内容生产的工具链与方法论，提升创作效率</li>
 </ul>
 </div>
 

@@ -43,11 +43,10 @@ img{max-width:100%;display:block}
 .article-card h2 a:hover{color:var(--accent);text-decoration:none}
 .article-meta{font-size:.8rem;color:var(--text-light);margin-bottom:.8rem}
 .article-excerpt{font-size:.92rem;color:var(--text-light);line-height:1.7}
-.topics-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem;margin-top:2rem}
-.topic-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.2rem;text-align:center;transition:all .2s;display:block}
-.topic-card:hover{border-color:var(--accent);box-shadow:0 3px 12px rgba(179,92,42,.1);text-decoration:none}
-.topic-name{font-weight:600;font-size:.95rem;color:var(--text);margin-bottom:.3rem;display:block}
-.topic-count{font-size:.75rem;color:var(--text-light);display:block}
+.topic-card-full{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.5rem 2rem;text-align:center;transition:all .2s;display:block;max-width:400px;margin:2rem auto 0}
+.topic-card-full:hover{border-color:var(--accent);box-shadow:0 3px 12px rgba(179,92,42,.1);text-decoration:none}
+.topic-name{font-weight:600;font-size:1rem;color:var(--text);margin-bottom:.3rem;display:block}
+.topic-count{font-size:.8rem;color:var(--text-light);display:block}
 .about-section{margin-bottom:2.2rem}
 .about-section h2{font-family:var(--serif);font-size:1.25rem;font-weight:700;margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:2px solid var(--accent);display:inline-block;color:var(--text)}
 .about-section p{color:var(--text-light);line-height:1.9}
@@ -57,7 +56,7 @@ img{max-width:100%;display:block}
 .contact-label{font-weight:600;color:var(--text);min-width:3rem}
 .contact-value{color:var(--accent)}
 .section-divider{border:none;border-top:1px solid var(--border);margin:2.5rem 0}
-@media(max-width:600px){.hero-title{font-size:2rem}.site-nav{gap:1.2rem}.topics-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.hero-title{font-size:2rem}.site-nav{gap:1.2rem}}
 </style>
 </head>
 <body>
@@ -73,16 +72,12 @@ img{max-width:100%;display:block}
 <h1 class="page-title">已发表</h1>
 <p class="page-desc">所有平台已发布的文章，持续更新中。</p>
 </div>
-<div class="topics-grid" style="margin-bottom:2.5rem">
-<a href="/topics/tcm.html" class="topic-card"><span class="topic-name">中医养生</span><span class="topic-count">按主题查看</span></a>
-<a href="/topics/ai.html" class="topic-card"><span class="topic-name">AI创作</span><span class="topic-count">按主题查看</span></a>
-</div>
+<a href="/topics/tcm.html" class="topic-card-full" style="margin-bottom:2rem">
+<span class="topic-name">中医养生</span>
+<span class="topic-count">按主题查看</span>
+</a>
 <div class="articles-list">
-<article class="article-card">
-<h2><a href="/articles/ai-content-production.html">AI时代的个体内容生产</a></h2>
-<div class="article-meta">2026-06-11 · AI创作 · 公众号, 小红书, B站</div>
-<p class="article-excerpt">一个人，一套AI工具链，如何跑通从选题到发布的全流程？我们正在实践这套方法论。</p>
-</article>
+<p style="color:var(--text-light)">暂无已发表文章，持续创作中。</p>
 </div>
 <div class="disclaimer">
         <strong>免责声明：</strong>本网站所有内容仅供健康知识参考，不构成任何医疗建议、诊断或治疗。<br>
