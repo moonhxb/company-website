@@ -26,7 +26,7 @@ img{max-width:100%;display:block}
 .site-footer{background:var(--card);border-top:1px solid var(--border);padding:2rem 0;margin-top:4rem}
 .footer-inner{text-align:center;font-size:.8rem;color:var(--text-light);line-height:2}
 .footer-inner p{margin-bottom:.3rem}
-.disclaimer{background:#fdf5ee;border:1px solid #e8c9a8;border-radius:4px;padding:1rem 1.2rem;margin-top:1rem;font-size:.78rem;color:#7a5a3a;line-height:1.7}
+.disclaimer{background:#fdf5ee;border:1px solid #e8c9a8;border-radius:4px;padding:1rem 1.2rem;margin-top:1.5rem;font-size:.78rem;color:#7a5a3a;line-height:1.7}
 .hero{text-align:center;padding:4rem 0 3rem;border-bottom:1px solid var(--border);margin-bottom:3rem}
 .hero-title{font-family:var(--serif);font-size:2.8rem;font-weight:700;color:var(--text);line-height:1.3;margin-bottom:.8rem;letter-spacing:.03em}
 .hero-subtitle{font-size:1.1rem;color:var(--text-light);font-weight:300;margin-bottom:2rem}
@@ -35,28 +35,39 @@ img{max-width:100%;display:block}
 .page-header{margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
 .page-title{font-family:var(--serif);font-size:2rem;font-weight:700;color:var(--text);margin-bottom:.5rem}
 .page-desc{color:var(--text-light);font-size:.95rem}
-.articles-list{display:flex;flex-direction:column;gap:1.5rem}
-.article-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.5rem 1.8rem;transition:box-shadow .2s}
-.article-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.07);border-color:#d4b896}
-.article-card h2{font-family:var(--serif);font-size:1.2rem;font-weight:700;margin-bottom:.5rem}
+.topics-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin-top:1.5rem}
+.topic-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.2rem 1.4rem;transition:all .2s;display:block}
+.topic-card:hover{border-color:var(--accent);box-shadow:0 3px 12px rgba(179,92,42,.1);text-decoration:none}
+.topic-name{font-weight:700;font-size:.95rem;color:var(--text);margin-bottom:.2rem;display:block;letter-spacing:.02em}
+.topic-dim{font-size:.7rem;color:var(--accent);font-weight:600;margin-bottom:.3rem;display:block}
+.topic-desc{font-size:.78rem;color:var(--text-light);line-height:1.5}
+.articles-list{display:flex;flex-direction:column;gap:1.2rem}
+.article-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.2rem 1.5rem;transition:box-shadow .2s}
+.article-card:hover{box-shadow:0 3px 12px rgba(0,0,0,.06);border-color:#d4b896}
+.article-card h2{font-family:var(--serif);font-size:1.1rem;font-weight:700;margin-bottom:.4rem}
 .article-card h2 a{color:var(--text)}
 .article-card h2 a:hover{color:var(--accent);text-decoration:none}
-.article-meta{font-size:.8rem;color:var(--text-light);margin-bottom:.8rem}
-.article-excerpt{font-size:.92rem;color:var(--text-light);line-height:1.7}
-.topic-card-full{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.5rem 2rem;text-align:center;transition:all .2s;display:block;max-width:400px;margin:2rem auto 0}
-.topic-card-full:hover{border-color:var(--accent);box-shadow:0 3px 12px rgba(179,92,42,.1);text-decoration:none}
-.topic-name{font-weight:600;font-size:1rem;color:var(--text);margin-bottom:.3rem;display:block}
-.topic-count{font-size:.8rem;color:var(--text-light);display:block}
-.about-section{margin-bottom:2.2rem}
-.about-section h2{font-family:var(--serif);font-size:1.25rem;font-weight:700;margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:2px solid var(--accent);display:inline-block;color:var(--text)}
+.article-meta{font-size:.78rem;color:var(--text-light);margin-bottom:.6rem}
+.article-excerpt{font-size:.88rem;color:var(--text-light);line-height:1.7}
+.back-link{font-size:.88rem;color:var(--text-light);display:inline-block;margin-top:1.5rem}
+.back-link:hover{color:var(--accent);text-decoration:none}
+.empty-state{background:var(--card);border:1px dashed var(--border);border-radius:6px;padding:3rem 2rem;text-align:center;color:var(--text-light);font-size:.9rem}
+.about-section{margin-bottom:2rem}
+.about-section h2{font-family:var(--serif);font-size:1.2rem;font-weight:700;margin-bottom:.7rem;padding-bottom:.4rem;border-bottom:2px solid var(--accent);display:inline-block;color:var(--text)}
 .about-section p{color:var(--text-light);line-height:1.9}
-.about-section ul{margin-left:1.5rem;margin-top:.8rem;display:flex;flex-direction:column;gap:.4rem}
+.about-section ul{margin-left:1.5rem;margin-top:.7rem;display:flex;flex-direction:column;gap:.4rem}
 .about-section li{color:var(--text-light);line-height:1.7}
-.contact-row{display:flex;align-items:center;gap:.6rem;margin-top:.4rem;font-size:.92rem}
+.contact-row{display:flex;align-items:center;gap:.6rem;margin-top:.4rem;font-size:.9rem}
 .contact-label{font-weight:600;color:var(--text);min-width:3rem}
 .contact-value{color:var(--accent)}
 .section-divider{border:none;border-top:1px solid var(--border);margin:2.5rem 0}
-@media(max-width:600px){.hero-title{font-size:2rem}.site-nav{gap:1.2rem}}
+.series-list{display:flex;flex-direction:column;gap:.5rem;margin-top:1.2rem}
+.series-item{display:flex;align-items:baseline;gap:.8rem;padding:.5rem 0;border-bottom:1px solid var(--border)}
+.series-item:last-child{border-bottom:none}
+.series-dim{font-size:.7rem;font-weight:700;color:var(--accent);min-width:2.5rem}
+.series-name{font-weight:600;color:var(--text);font-size:.9rem}
+.series-desc{font-size:.8rem;color:var(--text-light)}
+@media(max-width:600px){.hero-title{font-size:2rem}.site-nav{gap:1.2rem}.topics-grid{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
 <body>
@@ -78,16 +89,65 @@ img{max-width:100%;display:block}
 </div>
 
 <div class="about-section">
-<h2>主营方向</h2>
-<ul>
-<li><strong>中医养生内容</strong> — 深挖中医经典理论与现代生活场景的结合，内容涵盖食疗、艾灸、刮痧、情志调养等实用养生方法</li>
-<li><strong>健康生活方式</strong> — 分享作息、饮食、情志管理等与健康相关的实践心得</li>
-</ul>
+<h2>内容系列</h2>
+<p style="margin-bottom:1rem;color:var(--text-light)">我们从10个健康维度切入，深度解读身体发出的各种信号：</p>
+<div class="series-list">
+<div class="series-item">
+<span class="series-dim">A01</span>
+<span class="series-name">脾胃与运化</span>
+<span class="series-desc">— 吃一点就胀/大便不成形/没胃口/反酸烧心</span>
+</div>
+<div class="series-item">
+<span class="series-dim">A02</span>
+<span class="series-name">气血与荣养</span>
+<span class="series-desc">— 总觉得累/没力气/脸色发黄/指甲没血色</span>
+</div>
+<div class="series-item">
+<span class="series-dim">A03</span>
+<span class="series-name">睡眠与修复</span>
+<span class="series-desc">— 翻来覆去睡不着/天没亮就醒/一睡着就做梦</span>
+</div>
+<div class="series-item">
+<span class="series-dim">A04</span>
+<span class="series-name">情志与脏腑</span>
+<span class="series-desc">— 心里发慌/动不动就烦躁/想太多停不下来</span>
+</div>
+<div class="series-item">
+<span class="series-dim">A05</span>
+<span class="series-name">湿浊与代谢</span>
+<span class="series-desc">— 身子发沉/小腿一按一个坑/减肥特别难掉秤</span>
+</div>
+<div class="series-item">
+<span class="series-dim">A06</span>
+<span class="series-name">寒热与体质</span>
+<span class="series-desc">— 比别人怕冷/怕热/手心脚心发烧/一阵一阵发热</span>
+</div>
+<div class="series-item">
+<span class="series-dim">A07</span>
+<span class="series-name">疼痛与信号</span>
+<span class="series-desc">— 头疼/胃里拧着疼/后背酸痛/关节咔咔响</span>
+</div>
+<div class="series-item">
+<span class="series-dim">A08</span>
+<span class="series-name">面色与外观</span>
+<span class="series-desc">— 脸色又黄又暗/斑变多/黑眼圈重/头发又黄又干</span>
+</div>
+<div class="series-item">
+<span class="series-dim">A09</span>
+<span class="series-name">津液与补水</span>
+<span class="series-desc">— 嘴巴干/眼睛干涩/喝很多水还是渴/晚上睡觉一身汗</span>
+</div>
+<div class="series-item">
+<span class="series-dim">A10</span>
+<span class="series-name">四时与节律</span>
+<span class="series-desc">— 换季就容易不舒服/每个节气该怎么养护</span>
+</div>
+</div>
 </div>
 
 <div class="about-section">
 <h2>内容理念</h2>
-<p>我们相信，传统中医蕴含着深刻的生命智慧，能够为现代人提供独特的健康视角。深度胜于广度——我们更愿意把一个话题讲透，而非泛泛覆盖。每一篇内容都经过研究与思考，力求提供真实、有用的价值。</p>
+<p>深度胜于广度——我们更愿意把一个话题讲透，而非泛泛覆盖。每一篇内容都经过研究与思考，力求提供真实、有用的价值。</p>
 </div>
 
 <div class="about-section">
