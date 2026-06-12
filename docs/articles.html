@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="自媒体一人公司 — 用AI放大一个人的声音">
+<title>已发表 — 自媒体一人公司</title>
+<link rel="canonical" href="https://myewist.com/articles">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+<style>/* 自媒体一人公司 */
+:root{--bg:#faf9f7;--text:#2c2c2c;--text-light:#666;--accent:#c0392b;--border:#e0ddd8;--card:#fff;--serif:'Noto Serif SC',Georgia,serif;--sans:'Noto Sans SC',sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}a:hover{color:#e8503a;text-decoration:underline}
+img{max-width:100%;display:block}
+.container{max-width:800px;margin:0 auto;padding:0 1.5rem}
+.site-header{background:var(--card);border-bottom:1px solid var(--border);padding:1.2rem 0;position:sticky;top:0;z-index:100}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.site-title{font-family:var(--serif);font-size:1.3rem;font-weight:700;color:var(--text);letter-spacing:.02em}
+.site-title:hover{color:var(--accent);text-decoration:none}
+.site-nav{display:flex;gap:2rem}
+.site-nav a{font-size:.9rem;font-weight:500;color:var(--text-light);letter-spacing:.04em;transition:color .2s}
+.site-nav a:hover{color:var(--accent);text-decoration:none}
+.site-main{min-height:60vh;padding:3rem 0}
+.site-footer{background:var(--card);border-top:1px solid var(--border);padding:2rem 0;margin-top:4rem;text-align:center;font-size:.85rem;color:var(--text-light)}
+.hero{text-align:center;padding:4rem 0 3rem;border-bottom:1px solid var(--border);margin-bottom:3rem}
+.hero-title{font-family:var(--serif);font-size:2.8rem;font-weight:700;color:var(--text);line-height:1.2;margin-bottom:1rem}
+.hero-subtitle{font-size:1.15rem;color:var(--text-light);font-weight:300;margin-bottom:2.5rem}
+.hero-tagline{display:inline-block;background:var(--accent);color:#fff;padding:.5rem 1.4rem;border-radius:2rem;font-size:.85rem;font-weight:500;letter-spacing:.06em}
+.hero-tagline:hover{background:#e8503a;color:#fff;text-decoration:none}
+.page-header{margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+.page-title{font-family:var(--serif);font-size:2rem;font-weight:700;color:var(--text);margin-bottom:.5rem}
+.page-desc{color:var(--text-light);font-size:.95rem}
+.articles-list{display:flex;flex-direction:column;gap:1.5rem}
+.article-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.5rem 1.8rem;transition:box-shadow .2s}
+.article-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.07);border-color:#ccc}
+.article-card h2{font-family:var(--serif);font-size:1.25rem;font-weight:700;margin-bottom:.5rem}
+.article-card h2 a{color:var(--text)}
+.article-card h2 a:hover{color:var(--accent);text-decoration:none}
+.article-meta{font-size:.8rem;color:var(--text-light);margin-bottom:.8rem}
+.article-excerpt{font-size:.92rem;color:var(--text-light);line-height:1.7}
+.topics-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem;margin-top:2rem}
+.topic-card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:1.2rem;text-align:center;transition:all .2s;display:block}
+.topic-card:hover{border-color:var(--accent);box-shadow:0 3px 12px rgba(192,57,43,.1);text-decoration:none}
+.topic-name{font-weight:600;font-size:.95rem;color:var(--text);margin-bottom:.3rem;display:block}
+.topic-count{font-size:.75rem;color:var(--text-light);display:block}
+.about-section{margin-bottom:2.5rem}
+.about-section h2{font-family:var(--serif);font-size:1.3rem;font-weight:700;margin-bottom:1rem;padding-bottom:.5rem;border-bottom:2px solid var(--accent);display:inline-block}
+.text-center{text-align:center}.mt-2{margin-top:2rem}.text-light{color:var(--text-light)}
+@media(max-width:600px){.hero-title{font-size:2rem}.site-nav{gap:1.2rem}.topics-grid{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<a href="/" class="site-title">自媒体一人公司</a>
+<nav class="site-nav"><a href="/about" >关于</a>
+        <a href="/articles" class="active">已发表</a></nav>
+</div>
+</header>
+<main class="site-main"><div class="container">
+<div class="page-header">
+<h1 class="page-title">已发表</h1>
+<p class="page-desc">所有平台已发布的文章，持续更新中。</p>
+</div>
+<div class="topics-grid" style="margin-bottom:2.5rem;">
+<a href="/topics/etf" class="topic-card"><span class="topic-name">ETF投资</span><span class="topic-count">按主题查看</span></a>
+<a href="/topics/tcm" class="topic-card"><span class="topic-name">中医健康</span><span class="topic-count">按主题查看</span></a>
+<a href="/topics/ai" class="topic-card"><span class="topic-name">AI创作</span><span class="topic-count">按主题查看</span></a>
+</div>
+<div class="articles-list">
+<article class="article-card">
+<h2><a href="/articles/ai-content-production">AI时代的个体内容生产</a></h2>
+<div class="article-meta">2026-06-11 · AI创作 · 公众号, 小红书, B站</div>
+<p class="article-excerpt">一个人，一套AI工具链，如何跑通从选题到发布的全流程？我们正在实践这套方法论。</p>
+</article>
+</div>
+</div></main>
+<footer class="site-footer"><div class="container">
+<p>&copy; 2026 自媒体一人公司 · 用AI放大一个人的声音</p>
+</div></footer>
+</body></html>
